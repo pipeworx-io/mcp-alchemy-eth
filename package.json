@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-alchemy-eth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Alchemy (Ethereum + L2) MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-db4172e6bca125bb31679964fd5449a884a4928b8600b3d58aef14ace9af6748",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-93b861e942afb6396e5f5dd0dac8655791ad1b86a83f0dccc4542d372cb83cc2",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
