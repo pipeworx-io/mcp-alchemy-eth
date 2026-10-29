@@ -1,0 +1,197 @@
+[
+  {
+    "name": "eth_call",
+    "description": "Execute any Ethereum JSON-RPC method (e.g. eth_blockNumber, eth_getBalance, eth_getTransactionByHash) on the specified chain (default: eth-mainnet) via Alchemy; pass method name and params array.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "params": {},
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "method"
+      ]
+    }
+  },
+  {
+    "name": "token_balances",
+    "description": "ERC-20 balances.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "contracts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "address"
+      ]
+    }
+  },
+  {
+    "name": "token_metadata",
+    "description": "ERC-20 metadata.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contract": {
+          "type": "string"
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract"
+      ]
+    }
+  },
+  {
+    "name": "token_allowance",
+    "description": "ERC-20 allowance.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contract": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "spender": {
+          "type": "string"
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract",
+        "owner",
+        "spender"
+      ]
+    }
+  },
+  {
+    "name": "nfts_owned",
+    "description": "NFTs owned by address.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "owner": {
+          "type": "string"
+        },
+        "contracts": {
+          "type": "string"
+        },
+        "page_key": {
+          "type": "string"
+        },
+        "page_size": {
+          "type": "number"
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "owner"
+      ]
+    }
+  },
+  {
+    "name": "nft_metadata",
+    "description": "Single NFT metadata.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contract": {
+          "type": "string"
+        },
+        "tokenId": {
+          "type": "string"
+        },
+        "refresh_cache": {
+          "type": "boolean"
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract",
+        "tokenId"
+      ]
+    }
+  },
+  {
+    "name": "nfts_for_collection",
+    "description": "NFTs in a collection.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contract": {
+          "type": "string"
+        },
+        "withMetadata": {
+          "type": "boolean"
+        },
+        "startToken": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract"
+      ]
+    }
+  },
+  {
+    "name": "nft_owners",
+    "description": "Owners of a contract/token.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "contract": {
+          "type": "string"
+        },
+        "tokenId": {
+          "type": "string"
+        },
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract"
+      ]
+    }
+  },
+  {
+    "name": "asset_transfers",
+    "description": "Fetch Ethereum asset transfer history via Alchemy's alchemy_getAssetTransfers RPC on the specified chain; accepts fromBlock, toBlock, fromAddress, toAddress, contractAddresses, category, and maxCount as passthrough params.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]

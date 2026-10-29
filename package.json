@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-alchemy-eth",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Alchemy (Ethereum + L2) MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-alchemy-eth": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "alchemy-eth"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-alchemy-eth.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/alchemy-eth",
   "pipeworx": {
-    "sourceHash": "v1-9e8a4fc238746b3c5a4c94a9f8bade78163a7a65352403cef73ff332cf7a4d65",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "alchemy-eth",
+    "gatewaySlug": "alchemy-eth",
+    "sourceHash": "v1-cc920a98e562de83b918da7c6dc1c676a69ece2645dce089f3b25eed5b6daa96",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
