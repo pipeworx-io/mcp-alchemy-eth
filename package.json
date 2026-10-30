@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-alchemy-eth",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Alchemy (Ethereum + L2) MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "alchemy-eth",
     "gatewaySlug": "alchemy-eth",
-    "sourceHash": "v1-cc920a98e562de83b918da7c6dc1c676a69ece2645dce089f3b25eed5b6daa96",
-    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
+    "sourceHash": "v1-9bf96af273dfd3e6ce489ff918a577b01b215c25b61d698aa7cb0b7e4c2e9223",
+    "sourceCommit": "aef970216f5309cdd22a27ddfc275e472aaadac1"
   }
 }
